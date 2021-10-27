@@ -2,12 +2,12 @@ import {observable, action, computed, makeAutoObservable} from "mobx"
 import {createContext} from "react"
 
 const testData = [
-    {id: 1, text: "задача 1", completed: false},
-    {id: 2, text: "задача 2", completed: false},
-    {id: 3, text: "задача 3", completed: false},
-    {id: 4, text: "задача 4", completed: false},
-    {id: 5, text: "задача 5", completed: true},
-    {id: 6, text: "задача 6", completed: false},
+    {id: 1, text: "Выполнить задание", completed: false},
+    {id: 2, text: "Сходить в магазин", completed: false},
+    {id: 3, text: "Придумать задание", completed: true},
+    {id: 4, text: "Ещё одна задача", completed: false},
+    {id: 5, text: "Задача 5", completed: true},
+    {id: 6, text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n", completed: false},
 ];
 
 export interface ITask {
@@ -21,10 +21,11 @@ class TaskStore {
         makeAutoObservable(this)
     }
 
-    @observable tasks: Map<number, ITask> = new Map(testData.map(task => [task.id, task] as [number, ITask]));
+    @observable tasks: Map<number, ITask> = new Map();
 
     @action addTask = (task: ITask) => {
-        const newId = (Math.max.apply(null, [...this.tasks.keys()])) + 1;
+
+        const newId = this.tasks.size === 0 ? 1 :(Math.max.apply(0, [...this.tasks.keys()])) + 1;
         this.tasks.set(newId, {...task, id: newId})
     };
 
@@ -36,6 +37,11 @@ class TaskStore {
     @action deleteTask = (id: number) => {
         this.tasks.delete(id);
     };
+
+    @action fillData = () => {
+        this.tasks = new Map(testData.map(task => [task.id, task] as [number, ITask]))
+    };
+
 
     @computed get filter() {
         let completed: Map<number, ITask> = new Map();
