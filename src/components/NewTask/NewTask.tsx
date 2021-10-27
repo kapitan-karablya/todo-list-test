@@ -10,14 +10,15 @@ function NewTask() {
     const taskStore = useContext(TasksStore);
     const {addTask} = taskStore;
     return (
-        <div className={styles.newTask}>
+        <form className={styles.newTask}>
             <input type="text"
                    placeholder="Текст задачи"
                    className={styles.input}
                    value={text}
                    onChange={e => setText(e.target.value)}
             />
-            <button className={styles.addButton} onClick={() => {
+            <button type="submit" className={styles.addButton} onClick={(e) => {
+                e.preventDefault();
                 if (text !== "")
                     addTask({
                         id: 0,
@@ -28,7 +29,7 @@ function NewTask() {
             }}>
                 <AddIcon className={styles.addButtonSvg}/>
             </button>
-        </div>
+        </form>
     );
 }
 

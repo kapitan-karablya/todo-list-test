@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="78432576-696e-4af1-a3f7-06d883febb79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NewTask/NewTask.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewTask/NewTask.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TasksList/TasksList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TasksList/TasksList.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TasksList/TasksList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TasksList/TasksList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/TasksStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/TasksStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NewTask/NewTask.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewTask/NewTask.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +28,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../logistics-test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,7 +36,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.json.schema.catalog" />
-    <property name="ts.external.directory.path" value="C:\Users\Ivan\WebstormProjects\todo-list-test\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\Ivan\Documents\GitHub\todo-list-test\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -96,6 +89,7 @@
       <workItem from="1635281959833" duration="6409000" />
       <workItem from="1635322690400" duration="20425000" />
       <workItem from="1635350710685" duration="6182000" />
+      <workItem from="1635359940838" duration="323000" />
     </task>
     <task id="LOCAL-00001" summary="Создал проект">
       <created>1635241861931</created>
