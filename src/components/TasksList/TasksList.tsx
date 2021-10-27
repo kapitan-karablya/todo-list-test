@@ -1,16 +1,18 @@
 import React, {useContext} from 'react';
+import {observer} from "mobx-react-lite";
 
-import './TasksList.scss';
 import TasksStore from "../../stores/TasksStore";
 import Task from "../Task/Task";
-import {observer} from "mobx-react-lite";
+import styles from "./TasksList.module.scss"
+
 
 const TasksList = () => {
     const tasksStore = useContext(TasksStore);
-    const {tasks} = tasksStore;
+    const {tasks, filter} = tasksStore;
+
     return (
-        <div>
-            {Array.from(tasks.values()).map(task => (
+        <div className={styles.tasksList}>
+            {[...tasks.values()].map(task => (
                 <Task task={task}/>
             ))}
         </div>

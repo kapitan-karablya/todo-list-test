@@ -1,0 +1,42 @@
+@import '../../variables';
+
+:global {
+  %round-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid $primary-gray;
+    border-radius: 50%;
+  }
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  color: white;
+  font-family: $font-stack;
+  font-size: 24px;
+  box-shadow: 0 3px 5px $primary-gray;
+}
+
+.main {
+  width: 100%;
+  padding: 50px 30px 0 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
